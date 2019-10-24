@@ -1,4 +1,3 @@
-desc 'requires environment'
 task :environment do
   require_relative './config/environment'
 end
