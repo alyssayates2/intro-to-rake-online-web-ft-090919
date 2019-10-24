@@ -29,7 +29,7 @@ class Student
         task :migrate => :environment do
       Student.create_table
       end
-    end 
+    end
   end
 
   def self.drop_table
@@ -56,5 +56,3 @@ class Student
     sql = "SELECT * FROM students"
     DB[:conn].execute(sql)
   end
-
-
